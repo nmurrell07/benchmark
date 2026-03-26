@@ -120,7 +120,6 @@ def create_as(query):
 def insert_into(query):
   return "INSERT INTO TABLE %s %s;" % (TMP_TABLE, query)
 def count(query):
-  return query
   return "SELECT COUNT(*) FROM (%s) q;" % query
 
 IMPALA_MAP = {'1a': QUERY_1_PRE, '1b': QUERY_1_PRE, '1c': QUERY_1_PRE,
